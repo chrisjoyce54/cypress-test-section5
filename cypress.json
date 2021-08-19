@@ -1,4 +1,5 @@
 {
+    "defaultCommandTimeout": 120000,
     "baseUrl": "http://localhost:4200",
     "ignoreTestFiles": ["**/1-getting-started/*","**/2-advanced-examples/*"],
     "viewportHeight": 1080,

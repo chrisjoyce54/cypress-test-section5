@@ -1,0 +1,39 @@
+{
+    "articles": [
+        {
+            "title": "This is the title of an Article",
+            "slug": "tis-is-a-title-of-the-article-3putmt",
+            "body": "This is the body of an article",
+            "createdAt": "2021-08-19T20:09:37.807Z",
+            "updatedAt": "2021-08-19T20:09:37.807Z",
+            "tagList": [],
+            "description": "This is the description",
+            "author": {
+                "userName": "cyTester",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 1
+        },
+        {
+            "title": "New Article",
+            "slug": "new-article-qh9pg7",
+            "body": "214214",
+            "createdAt": "2021-08-19T21:03:37.807Z",
+            "updatedAt": "2021-08-19T21:03:37.807Z",
+            "tagList": [],
+            "description": "12414124",
+            "author": {
+                "userName": "julianJules",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 5
+        }
+    ],
+    "articlesCount": 2
+}

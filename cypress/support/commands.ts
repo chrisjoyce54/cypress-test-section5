@@ -30,4 +30,24 @@ Cypress.Commands.add('loginToApplication', () => {
     cy.get('[placeholder="Email"]').type('cjoyce@jackhenry.com');
     cy.get('[placeholder="Password"]').type('IMS1Password2');
     cy.get('form').submit();
-})
+});
+
+Cypress.Commands.add('loginToApplicationHeadless', () => {   
+    const userCreds = {
+        "user": {
+            "email": "cjoyce@jackhenry.com",
+            "password": "IMS1Password2"
+        }
+    };
+    
+    cy.request('POST', 'https://conduit.productionready.io/api/users/login', userCreds)
+        .its('body').then(body => {
+            const token = body.user.token;
+            cy.wrap(token).as('token');
+            cy.visit('/', {
+                onBeforeLoad (win) {
+                    win.localStorage.setItem('jwtToken, token');
+                }
+            });    
+        });
+});
